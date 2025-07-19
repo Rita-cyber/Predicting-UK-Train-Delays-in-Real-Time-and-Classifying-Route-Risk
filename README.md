@@ -1,6 +1,72 @@
 # Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk
 
 
+# Prerequisite
+
+git clone https://github.com/openraildata/stomp-client-python.git
+cd stomp-client-python
+
+✅ In your terminal session, run:
+export DARWIN_USERNAME='your_darwin_username'
+export DARWIN_PASSWORD='your_darwin_password'
+export KINESIS_STREAM_NAME='your_kinesis_stream_name'
+
+Replace the values with your actual credentials and stream name.
+
+✅ These variables will be available only in that terminal session.
+
+If on Windows (Not WSL)
+You can also install AWS CLI from the official Windows installer(https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+. aws configure
+You’ll be prompted for:
+
+AWS Access Key ID
+
+AWS Secret Access Key
+
+Default region
+
+Output format (e.g., json)
+
+Steps to Set It Up in AWS:
+Go to the AWS Console
+→ Kinesis Data Streams
+
+Click "Create data stream"
+
+Give it a name (e.g., darwin-rail-events) — this must match KINESIS_STREAM_NAME.
+
+Choose:
+
+Number of shards (start with 1 if testing)
+
+Other options as needed
+
+Click "Create data stream"
+
+--Run locally first before on AWS
+
+## Package into a Docker Container & Run on AWS Fargate or ECS
+This is more scalable and serverless.
+
+Containerize your script with dependencies.
+
+Push to ECR.
+
+Run in AWS Fargate.
+
+## lambda Code
+
+This script:
+
+Parses incoming compressed XML messages.
+
+Extracts features.
+
+Runs a prediction using a model loaded from MLflow.
+
+Sends the result to an AWS Kinesis stream.
 
 
 <img width="718" height="357" alt="image" src="https://github.com/user-attachments/assets/fed3fc76-b7a6-44d6-8a4d-d0388c6f56e8" />
