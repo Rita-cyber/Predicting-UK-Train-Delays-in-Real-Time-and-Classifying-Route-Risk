@@ -18,6 +18,14 @@ Replace the values with your actual credentials and stream name.
 If on Windows (Not WSL)
 You can also install AWS CLI from the official Windows installer(https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
+# Create a virtual environment with Python 3.8 or 3.9:
+python3.9 -m venv darwin-env
+source darwin-env/bin/activate
+Then install PyXB:
+
+bash
+pip install pyxb
+
 . aws configure
 You’ll be prompted for:
 
