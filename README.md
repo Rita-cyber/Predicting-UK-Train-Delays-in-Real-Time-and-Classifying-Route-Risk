@@ -85,3 +85,8 @@ Sends the result to an AWS Kinesis stream.
 <img width="722" height="383" alt="image" src="https://github.com/user-attachments/assets/829c5df7-3722-4cec-9b7a-8900d44f0748" />
 
 
+
+<img width="614" height="268" alt="image" src="https://github.com/user-attachments/assets/2d05562f-54c0-4bec-bc90-736dc28b2ff2" />
+
+
+
