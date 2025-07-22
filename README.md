@@ -90,3 +90,22 @@ Sends the result to an AWS Kinesis stream.
 
 
 
+
+<img width="932" height="385" alt="image" src="https://github.com/user-attachments/assets/82112785-bf0d-4396-b4d9-eb56b1d504d2" />
+
+
+
+
+
+<img width="921" height="311" alt="image" src="https://github.com/user-attachments/assets/48614245-b9a2-4de9-bd17-34ace3afe916" />
+
+
+
+
+<img width="806" height="415" alt="image" src="https://github.com/user-attachments/assets/85ab3a9f-fac1-43e2-89f5-47fc8e64ac3d" />
+
+
+
+
+
+
