@@ -100,9 +100,22 @@ Sends the result to an AWS Kinesis stream.
 <img width="921" height="311" alt="image" src="https://github.com/user-attachments/assets/48614245-b9a2-4de9-bd17-34ace3afe916" />
 
 
-
-
 <img width="806" height="415" alt="image" src="https://github.com/user-attachments/assets/85ab3a9f-fac1-43e2-89f5-47fc8e64ac3d" />
+
+## Spark Optimization
+- Reduced execution time from 1hour to 28mimutes by optimizing query and dropping unwanted columns before shuffle
+
+  <img width="736" height="346" alt="image" src="https://github.com/user-attachments/assets/5db6be96-f3ed-40f6-aa38-7484ed6bc0c5" />
+
+
+
+## Evidently_Data Qulity Monitoring
+
+<img width="915" height="437" alt="image" src="https://github.com/user-attachments/assets/360855d9-b7cd-40db-badf-68801118ac74" />
+
+<img width="732" height="375" alt="image" src="https://github.com/user-attachments/assets/2139a47e-0d3c-411c-be14-7eb2c3618a2d" />
+
+
 
 
 
