@@ -64,6 +64,12 @@ Push to ECR.
 
 Run in AWS Fargate.
 
+<img width="711" height="241" alt="image" src="https://github.com/user-attachments/assets/cf41968a-bf96-4a4f-9b43-24135a115e4e" />
+
+
+<img width="722" height="307" alt="image" src="https://github.com/user-attachments/assets/a36357f6-5e6b-4678-a4cf-7b1405fd5c90" />
+
+
 ## lambda Code
 
 This script:
