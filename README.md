@@ -122,6 +122,20 @@ Sends the result to an AWS Kinesis stream.
 <img width="732" height="375" alt="image" src="https://github.com/user-attachments/assets/2139a47e-0d3c-411c-be14-7eb2c3618a2d" />
 
 
+<img width="732" height="275" alt="image" src="https://github.com/user-attachments/assets/2f6cc7be-52c7-4df0-ad26-1f76e0111f9f" />
+
+
+<img width="647" height="349" alt="image" src="https://github.com/user-attachments/assets/015cfd41-1883-4eae-a011-3ea21eab579f" />
+
+<img width="620" height="231" alt="image" src="https://github.com/user-attachments/assets/6a534783-2d86-46c1-8067-98c8c3fac0c1" />
+
+<img width="620" height="229" alt="image" src="https://github.com/user-attachments/assets/5b5b1fa9-fd28-4bc5-8b95-684712d9c302" />
+
+
+
+
+
+
 
 
 
