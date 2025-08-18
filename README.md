@@ -83,18 +83,8 @@ Support operational decision-making (e.g., staffing, resource allocation) during
 
 
 
-<img width="718" height="357" alt="image" src="https://github.com/user-attachments/assets/fed3fc76-b7a6-44d6-8a4d-d0388c6f56e8" />
 
-
-
-
-<img width="722" height="383" alt="image" src="https://github.com/user-attachments/assets/829c5df7-3722-4cec-9b7a-8900d44f0748" />
-
-
-
-<img width="614" height="268" alt="image" src="https://github.com/user-attachments/assets/2d05562f-54c0-4bec-bc90-736dc28b2ff2" />
-
-
+# Cloud Monitoring
 
 
 <img width="932" height="385" alt="image" src="https://github.com/user-attachments/assets/82112785-bf0d-4396-b4d9-eb56b1d504d2" />
