@@ -1,68 +1,81 @@
 # Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk
 
 
-# Prerequisite
+## Problem Statement
+Problem Statement
 
-git clone https://github.com/openraildata/stomp-client-python.git
-cd stomp-client-python
+Train delays are a persistent challenge within the UK railway network, affecting passengers, operators, and the wider economy. Current real-time information systems primarily focus on reporting delays after they occur, leaving passengers and operators with limited ability to anticipate disruptions and plan accordingly.
 
-✅ In your terminal session, run:
-export DARWIN_USERNAME='your_darwin_username'
-export DARWIN_PASSWORD='your_darwin_password'
-export KINESIS_STREAM_NAME='your_kinesis_stream_name'
+With the growing availability of real-time railway data (e.g., Darwin Push Port feeds from National Rail) and advanced machine learning methods, there is an opportunity to predict delays before they happen. By leveraging historical and live train movement data, operators can provide early warnings to passengers, optimize resource allocation, and reduce the negative impact of disruptions.
 
-Replace the values with your actual credentials and stream name.
+Key challenges include:
 
-✅ These variables will be available only in that terminal session.
+High variability in train arrival times due to multiple external factors (weather, congestion, incidents, etc.).
 
-If on Windows (Not WSL)
-You can also install AWS CLI from the official Windows installer(https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+The need to process large volumes of streaming XML data from Darwin feeds in real time.
 
-# Create a virtual environment with Python 3.8 or 3.9:
-python3.9 -m venv darwin-env
-source darwin-env/bin/activate
-Then install PyXB:
+Transforming raw, nested railway data into meaningful features for machine learning.
 
-bash
-pip install pyxb
+Ensuring scalability, reliability, and integration with operational systems.
 
-. aws configure
-You’ll be prompted for:
+Business Requirements
+1. Real-Time Delay Prediction
 
-AWS Access Key ID
+The system must predict train arrival delays (in minutes) for UK National Rail services in near real time.
 
-AWS Secret Access Key
+Predictions should be updated continuously as new real-time feed data arrives.
 
-Default region
+2. Data Ingestion and Processing
 
-Output format (e.g., json)
+Ingest real-time train movement and schedule data from the Darwin Push Port feed via AWS Kinesis.
 
-Steps to Set It Up in AWS:
-Go to the AWS Console
-→ Kinesis Data Streams
+Store both raw XML data and processed tabular data (CSV/Parquet) in AWS S3 for historical analysis.
 
-Click "Create data stream"
+Apply transformations (normalization, timestamp alignment, feature engineering) to prepare features for machine learning.
 
-Give it a name (e.g., darwin-rail-events) — this must match KINESIS_STREAM_NAME.
+3. Machine Learning Model Lifecycle
 
-Choose:
+Train and evaluate machine learning models (e.g., Random Forest, XGBoost, Linear Regression) on historical data.
 
-Number of shards (start with 1 if testing)
+Register the best-performing model in MLflow Model Registry with versioning and metadata.
 
-Other options as needed
+Deploy the model for real-time inference within a Lambda function, integrated with the streaming pipeline.
 
-Click "Create data stream"
+4. Orchestration and Automation
 
---Run locally first before on AWS
+Use Apache Airflow to orchestrate data workflows, including ETL, model training, evaluation, and deployment.
 
-## Package into a Docker Container & Run on AWS Fargate or ECS
-This is more scalable and serverless.
+Use AWS Glue for large-scale batch transformations of historical data.
 
-Containerize your script with dependencies.
+5. Monitoring and Governance
 
-Push to ECR.
+Track pipeline health, job failures, and data quality issues.
 
-Run in AWS Fargate.
+Monitor prediction accuracy drift using Evidently AI and visualize metrics in Grafana dashboards.
+
+Ensure compliance with data governance and security standards.
+
+6. End-User Impact
+
+Provide train operators with dashboards or APIs to view predicted arrival times and potential delays.
+
+Improve passenger experience by enabling better journey planning through more accurate, predictive information.
+
+Support operational decision-making (e.g., staffing, resource allocation) during disruption scenarios.
+
+✅ This positions the project as both a data engineering and machine learning in production (MLOps) use case, highlighting the technical and business impact.
+
+
+
+# Deployment Architecture
+
+<img width="599" height="385" alt="image" src="https://github.com/user-attachments/assets/e3ab64bf-b5e4-47f7-8347-f69a46de78b8" />
+
+
+# Orchestration Architecture
+
+<img width="729" height="404" alt="image" src="https://github.com/user-attachments/assets/f24b7da5-670d-45e0-97bf-fa7fbcd387dd" />
+
 
 <img width="711" height="241" alt="image" src="https://github.com/user-attachments/assets/cf41968a-bf96-4a4f-9b43-24135a115e4e" />
 
