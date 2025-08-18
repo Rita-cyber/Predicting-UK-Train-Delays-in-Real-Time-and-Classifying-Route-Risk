@@ -77,23 +77,10 @@ Support operational decision-making (e.g., staffing, resource allocation) during
 <img width="729" height="404" alt="image" src="https://github.com/user-attachments/assets/f24b7da5-670d-45e0-97bf-fa7fbcd387dd" />
 
 
-<img width="711" height="241" alt="image" src="https://github.com/user-attachments/assets/cf41968a-bf96-4a4f-9b43-24135a115e4e" />
 
 
-<img width="722" height="307" alt="image" src="https://github.com/user-attachments/assets/a36357f6-5e6b-4678-a4cf-7b1405fd5c90" />
 
 
-## lambda Code
-
-This script:
-
-Parses incoming compressed XML messages.
-
-Extracts features.
-
-Runs a prediction using a model loaded from MLflow.
-
-Sends the result to an AWS Kinesis stream.
 
 
 <img width="718" height="357" alt="image" src="https://github.com/user-attachments/assets/fed3fc76-b7a6-44d6-8a4d-d0388c6f56e8" />
