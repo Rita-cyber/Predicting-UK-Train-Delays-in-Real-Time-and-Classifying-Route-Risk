@@ -1,4 +1,4 @@
-# Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk
+# Predicting-UK-Train-Delays-in-Real-Time
 
 
 ## Problem Statement
@@ -112,9 +112,9 @@ Support operational decision-making (e.g., staffing, resource allocation) during
 <img width="732" height="375" alt="image" src="https://github.com/user-attachments/assets/2139a47e-0d3c-411c-be14-7eb2c3618a2d" />
 
 
-## Project 
+## Project Procedure
 - Clone the repo
-$ git clone https://github.com/Rita-cyber/Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk
+$ git clone https://github.com/Rita-cyber/Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk.git
 
 - Follow the instructions of the ReadMe of Containerization-Darwin-Producer Folder
 - Follow the instructions on the ReadMe of the orchestration Folder
