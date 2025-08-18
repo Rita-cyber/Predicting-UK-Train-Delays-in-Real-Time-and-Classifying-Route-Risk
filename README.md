@@ -105,7 +105,7 @@ Support operational decision-making (e.g., staffing, resource allocation) during
 
 
 
-## Evidently_Data Qulity Monitoring
+## Evidently_Data Quality Monitoring
 
 <img width="915" height="437" alt="image" src="https://github.com/user-attachments/assets/360855d9-b7cd-40db-badf-68801118ac74" />
 
