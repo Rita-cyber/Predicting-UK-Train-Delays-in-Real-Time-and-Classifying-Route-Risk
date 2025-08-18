@@ -1,0 +1,26 @@
+FROM python:3.9-slim
+
+# Set workdir
+WORKDIR /app
+
+# Install build deps needed for PyXB
+#RUN apt-get update && apt-get install -y \
+    #gcc g++ make libxml2-dev libxslt-dev \
+   # && rm -rf /var/lib/apt/lists/*
+
+# Install Python deps first (better caching)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy schema + env files
+COPY ppv16/ ./ppv16/
+COPY darwin-env/ ./darwin-env/
+
+# Generate PyXB bindings at build time
+RUN pyxbgen --schema-root=ppv16 --module PPv16 rttiPPTSchema_v16.xsd
+
+# Copy the producer code
+COPY darwin_kinesis_producer.py .
+
+# ECS entrypoint (runs continuously)
+CMD ["python", "darwin_kinesis_producer.py"]

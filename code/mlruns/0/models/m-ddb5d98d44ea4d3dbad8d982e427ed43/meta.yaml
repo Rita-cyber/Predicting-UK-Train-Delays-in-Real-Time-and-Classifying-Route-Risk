@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/personal/Downloads/mlop_project/Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk/code/mlruns/0/models/m-ddb5d98d44ea4d3dbad8d982e427ed43/artifacts
+creation_timestamp: 1754079330289
+experiment_id: '0'
+last_updated_timestamp: 1754079347593
+model_id: m-ddb5d98d44ea4d3dbad8d982e427ed43
+model_type: null
+name: model
+source_run_id: e1e64962b0614b19af1aa05a60f0dd85
+status: 2
+status_message: null

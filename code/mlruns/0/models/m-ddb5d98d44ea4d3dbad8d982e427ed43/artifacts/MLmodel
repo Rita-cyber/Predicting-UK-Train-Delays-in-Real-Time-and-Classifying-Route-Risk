@@ -1,0 +1,14 @@
+artifact_path: file:///C:/Users/personal/Downloads/mlop_project/Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk/code/mlruns/0/models/m-ddb5d98d44ea4d3dbad8d982e427ed43/artifacts
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+mlflow_version: 3.1.4
+model_id: m-ddb5d98d44ea4d3dbad8d982e427ed43
+model_size_bytes: 121115
+model_uuid: m-ddb5d98d44ea4d3dbad8d982e427ed43
+prompts: null
+run_id: e1e64962b0614b19af1aa05a60f0dd85
+utc_time_created: '2025-08-01 20:15:30.371533'

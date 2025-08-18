@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  localstack:
+    image: localstack/localstack:latest
+    ports:
+      - "4566:4566"       # Edge port
+    environment:
+      - SERVICES=kinesis  # Only Kinesis for faster boot
+      - DEBUG=1
+      - AWS_DEFAULT_REGION=eu-north-1
+    volumes:
+      - localstack_data:/var/lib/localstack
+
+  producer:
+    build: .
+    depends_on:
+      - localstack
+    env_file:
+      - .env
+    environment:
+      # Force producer to hit LocalStack, not AWS
+      - AWS_DEFAULT_REGION=eu-north-1
+      - AWS_REGION=eu-north-1
+      - AWS_ACCESS_KEY_ID=test4567
+      - AWS_SECRET_ACCESS_KEY=testdefghik
+      - KINESIS_ENDPOINT_URL=http://localstack:4566
+      - KINESIS_STREAM_NAME=kinesis-datanationalrail-events
+      # Flip this to 1 if you want to simulate messages (no Darwin)
+      - SIM_MODE=${SIM_MODE:-0}
+    command: ["python", "darwin_stomp_test.py"]
+
+volumes:
+  localstack_data:
+

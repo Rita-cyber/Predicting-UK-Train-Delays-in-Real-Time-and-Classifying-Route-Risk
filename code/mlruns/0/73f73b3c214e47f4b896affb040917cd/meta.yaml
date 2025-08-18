@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/personal/Downloads/mlop_project/Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk/code/mlruns/0/73f73b3c214e47f4b896affb040917cd/artifacts
+end_time: 1754121625035
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 73f73b3c214e47f4b896affb040917cd
+run_name: omniscient-lynx-387
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754121621396
+status: 3
+tags: []
+user_id: personal

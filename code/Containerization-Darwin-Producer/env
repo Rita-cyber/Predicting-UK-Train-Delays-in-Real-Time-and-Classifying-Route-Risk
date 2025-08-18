@@ -1,0 +1,4 @@
+DARWIN_USERNAME=DARWIN76ee3c8b-16bb-44c3-be6b-8b09b073f0bd
+DARWIN_PASSWORD=c9c047f6-b26f-4149-bde6-8daa0793e437
+KINESIS_STREAM_NAME=kinesis-datanationalrail-events
+AWS_REGION=eu-north-1

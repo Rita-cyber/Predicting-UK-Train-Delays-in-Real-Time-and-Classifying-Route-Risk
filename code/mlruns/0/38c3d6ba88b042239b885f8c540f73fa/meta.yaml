@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/personal/Downloads/mlop_project/Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk/code/mlruns/0/38c3d6ba88b042239b885f8c540f73fa/artifacts
+end_time: 1754077217164
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 38c3d6ba88b042239b885f8c540f73fa
+run_name: rare-squid-683
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754077216974
+status: 4
+tags: []
+user_id: personal

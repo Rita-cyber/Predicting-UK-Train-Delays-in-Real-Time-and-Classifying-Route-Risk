@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/personal/Downloads/mlop_project/Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk/code/mlruns/0/6614e6df77a74fc9b741afab309785cf/artifacts
+end_time: 1754079068009
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6614e6df77a74fc9b741afab309785cf
+run_name: polite-elk-132
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754079064891
+status: 3
+tags: []
+user_id: personal
