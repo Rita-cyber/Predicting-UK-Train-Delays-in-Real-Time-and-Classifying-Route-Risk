@@ -18,8 +18,8 @@ except ModuleNotFoundError:
 
 # 🛠 CONFIGURATION (fetched from environment variables)
 # 🔐 Secure Configuration via Environment Variables
-USERNAME = 'DARWIN76ee3c8b-16bb-44c3-be6b-8b09b073f0bd'
-PASSWORD = 'c9c047f6-b26f-4149-bde6-8daa0793e437'
+USERNAME = 'username'
+PASSWORD = 'password'
 HOSTNAME = 'darwin-dist-44ae45.nationalrail.co.uk'
 HOSTPORT = 61613
 TOPIC = '/topic/darwin.pushport-v16'
