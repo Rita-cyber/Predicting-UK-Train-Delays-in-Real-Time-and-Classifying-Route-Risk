@@ -116,10 +116,10 @@ Support operational decision-making (e.g., staffing, resource allocation) during
 - Clone the repo
 $ git clone https://github.com/Rita-cyber/Predicting-UK-Train-Delays-in-Real-Time-and-Classifying-Route-Risk.git
 
-- Follow the instructions of the ReadMe of Containerization-Darwin-Producer Folder
-- Follow the instructions on the ReadMe of the orchestration Folder
-- Follow the instructions on the ReadMe of the Deployment Folder
-- Follow the instructions on the ReadMe of the Monitoring Folder.
+- Follow the instructions of the ReadMe of code/Containerization-Darwin-Producer Folder
+- Follow the instructions on the ReadMe of code/orchestration Folder
+- Follow the instructions on the ReadMe of code/Deployment Folder
+- Follow the instructions on the ReadMe of code/Monitoring Folder.
 
 
 
